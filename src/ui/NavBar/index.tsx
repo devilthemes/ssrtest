@@ -7,6 +7,12 @@ import Container from "react-bootstrap/Container";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
+// Define the API response structure
+interface MenuResponse {
+  success: boolean;
+  data: MenuItem[];
+}
 type MenuItem = {
   id: number;
   url: string;
@@ -35,22 +41,27 @@ export default function NavBar() {
         navbar.classList.remove("sticky-nav");
       }
     });
-    const fetchMenuItems = async () => {
-      
-        const response = await axios(
-          process.env.NEXT_PUBLIC_API_URL + "/api/menuitem/parents",
-          {
-            method: "GET",
-          }
-        );
-        if (response?.data?.success) {
-          console.log(response.data);
-          setMenuItems(response.data.data);
-          setLoading(false);
-        }
-        // assuming API returns an array
-      
-    };
+    const fetchMenuItems = async (): Promise<void> => {
+  try {
+    const response = await axios.get<MenuResponse>(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/menuitem/parents`
+    );
+
+    if (response.data?.success) {
+      console.log(response.data);
+      setMenuItems(response.data.data); // make sure setMenuItems expects MenuItem[]
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error("Failed to fetch menu items:", error.message);
+    } else {
+      console.error("Unknown error while fetching menu items", error);
+    }
+  } finally {
+    setLoading(false);
+  }
+};
+
 
     fetchMenuItems();
   }, []);
