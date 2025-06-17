@@ -37,17 +37,19 @@ export default function NavBar() {
     });
     const fetchMenuItems = async () => {
       try {
-        const response = await axios.get(process.env.NEXT_PUBLIC_API_URL + "/api/menuitem/parents");
-        if(response.data.success){
+        const response = await axios(process.env.NEXT_PUBLIC_API_URL + "/api/menuitem/parents",{
+          method:"GET"
+        });
+        if(response?.data?.success){
           console.log(response.data);
           setMenuItems(response.data.data);
+           setLoading(false);
         }
          // assuming API returns an array
       } catch (error) {
-       console.error(error);
+       console.log("Something went wrong while hit API");
+       setLoading(false);
        
-      } finally {
-        setLoading(false);
       }
     };
 
