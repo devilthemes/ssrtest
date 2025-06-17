@@ -12,7 +12,7 @@ type MenuItem = {
   url: string;
   displayText: string;
   parentId: number;
-  children: MenuItem[]
+  children: MenuItem[];
 };
 
 export default function NavBar() {
@@ -37,27 +37,30 @@ export default function NavBar() {
     });
     const fetchMenuItems = async () => {
       try {
-        const response = await axios(process.env.NEXT_PUBLIC_API_URL + "/api/menuitem/parents",{
-          method:"GET"
-        });
-        if(response?.data?.success){
+        const response = await axios(
+          process.env.NEXT_PUBLIC_API_URL + "/api/menuitem/parents",
+          {
+            method: "GET",
+          }
+        );
+        if (response?.data?.success) {
           console.log(response.data);
           setMenuItems(response.data.data);
-           setLoading(false);
+          setLoading(false);
         }
-         // assuming API returns an array
+        // assuming API returns an array
       } catch (error) {
-       console.log("Something went wrong while hit API");
-       setLoading(false);
-       
+        if (error instanceof Error) {
+          console.error(error.message);
+        } else {
+          console.error("Unknown error", error);
+        }
       }
     };
 
     fetchMenuItems();
-
-
   }, []);
- 
+
   return (
     <div className="navRow" id="nav">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -69,29 +72,39 @@ export default function NavBar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-            {loading ? (
-                    <></>
-                  ) : (
-                    menuItems.map((item,index) => (
-                      item.children.length>0 ? 
-                      <NavDropdown key={index} title={item.displayText} id="basic-nav-dropdown">
-                        <h3>
-                          <Link href={item.url}>{item.displayText}</Link>
-                        </h3>
-                        <div className="submenulinks">
-                          { item.children && item.children.length > 0 &&
-                            
-                            item.children.map((child) => (
-                            <NavDropdown.Item key={child.id ?? Math.random()} href={child.url ?? '#'}>
+              {loading ? (
+                <></>
+              ) : (
+                menuItems.map((item, index) =>
+                  item.children.length > 0 ? (
+                    <NavDropdown
+                      key={index}
+                      title={item.displayText}
+                      id="basic-nav-dropdown"
+                    >
+                      <h3>
+                        <Link href={item.url}>{item.displayText}</Link>
+                      </h3>
+                      <div className="submenulinks">
+                        {item.children &&
+                          item.children.length > 0 &&
+                          item.children.map((child) => (
+                            <NavDropdown.Item
+                              key={child.id ?? Math.random()}
+                              href={child.url ?? "#"}
+                            >
                               {child.displayText ?? "Unnamed"}
                             </NavDropdown.Item>
-                            ))
-                          }
-                       </div>
-                      </NavDropdown> : <Nav.Link key={index} href={item.url}>{item.displayText}</Nav.Link>
-                    ))
-                  )}              
-             
+                          ))}
+                      </div>
+                    </NavDropdown>
+                  ) : (
+                    <Nav.Link key={index} href={item.url}>
+                      {item.displayText}
+                    </Nav.Link>
+                  )
+                )
+              )}
             </Nav>
             {/* <button className="schedule">Schedule Free Consultation</button> */}
           </Navbar.Collapse>
