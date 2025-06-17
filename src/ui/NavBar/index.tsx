@@ -44,11 +44,7 @@ export default function NavBar() {
         }
          // assuming API returns an array
       } catch (error) {
-         if (error.response) {
-      console.log(error.response.data);
-      console.log(error.response.status);
-      console.log(error.response.headers);
-    }
+       console.error(error);
        
       } finally {
         setLoading(false);
