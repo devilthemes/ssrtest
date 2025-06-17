@@ -36,7 +36,7 @@ export default function NavBar() {
       }
     });
     const fetchMenuItems = async () => {
-      try {
+      
         const response = await axios(
           process.env.NEXT_PUBLIC_API_URL + "/api/menuitem/parents",
           {
@@ -49,13 +49,7 @@ export default function NavBar() {
           setLoading(false);
         }
         // assuming API returns an array
-      } catch (error) {
-        if (error instanceof Error) {
-          console.error(error.message);
-        } else {
-          console.error("Unknown error", error);
-        }
-      }
+      
     };
 
     fetchMenuItems();
