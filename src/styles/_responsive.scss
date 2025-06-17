@@ -1,0 +1,22 @@
+
+
+/* Chrome, Edge, and Safari */
+@media only screen and (max-width: 768px) {
+   
+
+   }
+   
+   @media only screen and (max-width: 480px) {
+    
+   }
+
+   /* Mobile-first design */
+   @import "mobile-portait.scss";
+   
+   /* Mobile Landscape */
+   
+   @import "mobile-landscape.scss";
+
+/* Tablet Portait */
+   @import "tablet-portait.scss";
+   @import "tablet-landscape.scss";

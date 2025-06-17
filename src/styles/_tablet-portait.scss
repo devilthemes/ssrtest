@@ -1,0 +1,462 @@
+@media (min-width: 540px) and (max-width: 1024px) and (min-height: 720px) and (max-height: 1368px) {
+  // body {
+  //   &:before {
+  //     position: fixed;
+  //     top: 0px;
+  //     left: 0px;
+  //     width: 20px;
+  //     height: 20px;
+  //     background-color: blue;
+  //     content: "";
+  //     z-index: 9999;
+  //   }
+  // }
+
+  .noMobile {
+    display: none;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  // All Buttons
+  .bigBtn {
+    width: auto;
+    min-width: auto;
+    padding: 0 25px;
+    text-decoration: none;
+    position: relative;
+
+    height: 50px;
+
+    background: #6941c6;
+    gap: 10px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    span.txt {
+      padding-left: 0px;
+    }
+    span.icon {
+      padding-right: 0px;
+    }
+  }
+
+  // All Blocks
+  .impactClient,
+  .faq,
+  .ourServices,
+  .trainingProgram,
+  .boost,
+  .worldStreet,
+  .needHelp,
+  .siteFooter,
+  .lookingTransfer,
+  .impactClient .impactCont {
+    padding: 50px 0;
+  }
+  .needHelp {
+    padding-bottom: 50px;
+  }
+
+  // All Blocks header
+  .sectionHeader {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0px;
+  }
+  .impactClient .impactCont {
+    padding: 0;
+  }
+  .impactClient .impact {
+    padding-top: 0px;
+  }
+  .impactClient h2 {
+    text-align: left;
+  }
+  .impactClient .impactCont .col-md-6 {
+    width: 50%;
+  }
+  // All Section Paragraph
+  .sectionHeader p.headerPara,
+  .impactClient p,
+  .ourServices p.headerPara,
+  .trainingProgram p.headerInfo,
+  .trainingProgram .headerPage p.pageInfo,
+  .headerPage .trainingProgram p.pageInfo,
+  .trainingProgram .worldStreet p,
+  .worldStreet .trainingProgram p,
+  .trainingProgram .lookingTransfer p,
+  .lookingTransfer .trainingProgram p,
+  .trainingProgram .boost p,
+  .boost .trainingProgram p,
+  .trainingProgram .ourServices p.headerPara,
+  .ourServices .trainingProgram p.headerPara {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  #basic-navbar-nav {
+    position: fixed;
+    top: 98px;
+    left: 0px;
+
+    background-color: #160b38;
+    margin: 0px;
+    width: 100%;
+
+    overflow: auto;
+    z-index: 99;
+  }
+
+  .navRow nav.navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      background: url("/assets/images/close1.svg") no-repeat 50% 50% !important;
+      background-size: 33px !important;
+    }
+    &.collapsed {
+      .navbar-toggler-icon {
+        background: url("/assets/images/hamburger-button.svg") no-repeat 50% 50% !important;
+        background-size: 33px !important;
+      }
+    }
+  }
+
+  button.schedule {
+    margin: 20px 20px !important;
+    width: calc(100% - 40px) !important;
+    background-color: $ch-primary-700 !important;
+    color: #fff;
+  }
+  // Looking Transfer
+  .lookingTransfer {
+    .viewMore {
+      margin-bottom:0px;
+    }
+  }
+  // FAQ
+  .faq {
+    .accordianData{
+      padding-top:0px;
+    }
+  }
+  .navRow {
+    background-color: $ch-darkbg-900;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    .navbar-brand {
+      position: absolute;
+    }
+    nav.navbar {
+      .navbar-nav {
+        .nav-item,
+        .nav-link {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          flex: 1;
+          width: 100%;
+          position: relative;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 32px;
+          text-align: left;
+          color: #fff;
+          margin: 0px;
+          .dropdown-toggle {
+            &:after {
+              border-top: solid 2px #fff !important;
+              width: 10px !important;
+              height: 10px !important;
+              border-right: solid 2px #fff !important;
+              border-bottom: none !important;
+              border-left: none !important;
+              transform: rotate(135deg);
+              position: absolute;
+              right: 17px;
+              top: 19px;
+            }
+            &.show:after {
+              transform: rotate(316deg);
+            }
+          }
+          .dropdown-menu {
+            background-color: #221742;
+            position: static !important;
+            margin: 0px !important;
+            left: 0px !important;
+            transform: translate(0) !important;
+            width: 100% !important;
+            border-radius: 0px;
+            &:before {
+              display: none;
+            }
+            h3 {
+              display: none;
+            }
+            .submenulinks {
+              a {
+                padding-left: 0px;
+                padding-right: 0px;
+                font-weight: 400;
+                width: 100%;
+                color: #fff;
+                span {
+                  display: none;
+                }
+                .linkblockLeft {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      position: fixed;
+      right: 20px;
+      z-index: 9999;
+      border: none !important;
+      padding-right: 0px;
+      &:focus {
+        border: none !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .homeBanner h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 0px;
+  }
+  .homeBanner .bannerContent {
+    height: auto;
+  }
+
+  .homeBanner img.bannerImg,
+  .homeBanner,
+  .homeBanner .bannerContent {
+    height: 100%;
+  }
+  .homeBanner {
+    height: 100vh;
+  }
+  .worldStreet .company p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+  }
+  .valuedClient h2 {
+    padding-top: 0px;
+  }
+  .valuedClient .clients {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+  .valuedClient .clients .item {
+    width: 33.33%;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  
+  .enquiryNow {
+    font-family: Inter;
+    z-index: 999;
+    background: #fff;
+    .invalid-feedback{display:block}
+    .radioInput {
+      flex-direction: column;
+      .form-check {
+        margin-bottom: 0px;
+      }
+    }
+    button.close {
+      padding: 15px;
+      left: auto;
+      top: 0px;
+    }
+    form.siteForm {
+      height: auto;
+     
+      .captcha {
+       
+      }
+    }
+  }
+  .ourServices .servicesRow .col-md-6 {
+    border: none !important;
+  }
+
+  .ourServices .serviceItem {
+    padding: 25px 25px 50px 25px;
+    p {
+      min-height: auto;
+    }
+    .more {
+      padding-top: 0px;
+    }
+  }
+
+  .ourServices p.headerPara {
+    padding-bottom: 25px;
+  }
+  .ourServices .servicesRow {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .pageContent {
+    padding-top: 50px;
+    h2{
+      font-size: 35px;
+      line-height: 40px;
+      &.extra{
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .siteFooter .social {
+    justify-content: end;
+    padding: 0 0 20px 0;
+  }
+  .siteFooter .copyright,
+  .siteFooter .privacy {
+    border-top: 1px solid #ffffff1a;
+    padding: 10px 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .pagination {
+    flex-wrap: wrap;
+  }
+  .headerPage {
+    height: auto;
+    .col {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      h1.pageTitle{
+        margin-top: 100px;
+      }
+    }
+    &:before {
+      height: 292px;
+      display: none;
+    }
+  }
+  .enrollbox {
+    margin-top: 0px;
+    padding: 15px;
+  }
+  .enrollment {
+    video {
+      display: block;
+    }
+    .enrollment {
+      video {
+        display: none;
+      }
+      form.siteForm {
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .withIcon {
+          label {
+            width: 48%;
+          }
+          .iconInput {
+            width: 52%;
+          }
+        }
+      }
+    }
+  }
+  .impactClient {
+    min-height: auto;
+  }
+
+  .trainingProgram {
+    p.headerInfo {
+      margin-bottom: 0px;
+    }
+    .item {
+      margin-bottom: 30px;
+      h3 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .detail {
+        font-size: 16px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .viewMore {
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+  }
+  .siteFooter .emaillink {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  .siteFooter .social {
+    justify-content: center;
+  }
+  .needHelp .h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .collapse:not(.show) {
+    display: none !important;
+}
+.navbar-expand-lg .navbar-toggler {
+  display: block !important;
+}
+     /* Pagination */
+     .paginationBlock {
+      padding-top:20px;
+      padding-bottom:0px;
+      .pagination{
+        margin-top:0px;
+        padding-top:0px;
+      }
+     }
+     .courseInfo{
+      .col-md-6{
+        width:100%;
+      }
+     }
+}

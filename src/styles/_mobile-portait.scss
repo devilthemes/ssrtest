@@ -1,0 +1,772 @@
+@media (min-width: 300px) and (max-width: 430px) {
+  // body {
+  //     &:before {
+  //       position: fixed;
+  //       top: 0px;
+  //       left: 0px;
+  //       width: 20px;
+  //       height: 20px;
+  //       background-color:aqua;
+  //       content: "";
+  //       z-index: 9999;
+  //     }
+  //   }
+  .primaryButton {
+    padding: 8px 10px;
+  }
+  .bigBtn {
+    width: auto;
+    min-width: auto;
+    padding: 0 20px;
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    background: #6941c6;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    font-weight: 600;
+    span.txt {
+      padding-left: 0px;
+    }
+    span.icon {
+      padding-right: 0px;
+    }
+  }
+  .accordianData .item.active .accordianBody {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  // All Blocks
+  .impactClient,
+  .faq,
+  .ourServices,
+  .trainingProgram,
+  .boost,
+  .worldStreet,
+  .needHelp,
+  .siteFooter,
+  .lookingTransfer,
+  .sectionBlock {
+    padding: 50px 0;
+  }
+  .needHelp {
+    padding-bottom: 0px;
+  }
+
+  // All Blocks header
+  .sectionHeader,
+  .faq .h2,
+  .pageContent h2.extra,
+  .ourServices h2,
+  .pageContent h2,
+  .worldStreet h2,
+  .lookingTransfer h2,
+  .boost h2,
+  .trainingProgram h2,
+  .impactClient h2,
+  .needHelp .h2 {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 25px;
+    margin: 0px;
+    font-weight: 700;
+  }
+
+  .lookingTransfer a.viewMore {
+    margin-bottom: 0px;
+  }
+  // All Section Paragraph
+  .impactClient p,
+  .ourServices p.headerPara,
+  .trainingProgram p.headerInfo,
+  .trainingProgram .headerPage p.pageInfo,
+  .headerPage .trainingProgram p.pageInfo,
+  .trainingProgram .worldStreet p,
+  .worldStreet .trainingProgram p,
+  .trainingProgram .lookingTransfer p,
+  .lookingTransfer .trainingProgram p,
+  .trainingProgram .boost p,
+  .boost .trainingProgram p,
+  .trainingProgram .ourServices p.headerPara,
+  .ourServices .trainingProgram p.headerPara,
+  .boost p,
+  .headerPage .pageInfo,
+  .worldStreet p {
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+  }
+
+  .noMobile {
+    display: none;
+  }
+
+  .toaster {
+    left: 15px;
+    width: calc(100% - 30px);
+    top: 20px;
+  }
+
+  .navRow {
+    position: fixed;
+    height: 60px;
+    #basic-navbar-nav {
+      position: fixed;
+      top: 60px;
+      left: 0px;
+      background-color: #160b38;
+      margin: 0px;
+      width: 100%;
+      height: auto;
+      overflow: auto;
+    }
+  }
+  .navRow nav.navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      background: url("/assets/images/close1.svg") no-repeat 50% 50% !important;
+      background-size: 25px !important;
+    }
+    &.collapsed {
+      .navbar-toggler-icon {
+        background: url("/assets/images/hamburger-button.svg") no-repeat 50% 50% !important;
+        background-size: 25px !important;
+      }
+    }
+  }
+
+  button.schedule {
+    margin: 20px 20px !important;
+    width: calc(100% - 40px) !important;
+    background-color: $ch-primary-700 !important;
+    color: #fff;
+  }
+  .navRow {
+    background-color: $ch-darkbg-900;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    .navbar-brand {
+      position: absolute;
+    }
+
+    nav.navbar {
+      .navbar-nav {
+        .nav-item,
+        .nav-link {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          flex: 1;
+          width: 100%;
+          position: relative !important;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 32px;
+          text-align: left;
+          color: #fff;
+          margin: 0px;
+          .dropdown-item {
+            &:hover {
+              background-color: #221742;
+            }
+          }
+          .dropdown-toggle {
+            &:after {
+              border-top: solid 2px #fff !important;
+              width: 10px !important;
+              height: 10px !important;
+              border-right: solid 2px #fff !important;
+              border-bottom: none !important;
+              border-left: none !important;
+              transform: rotate(135deg);
+              position: absolute;
+              right: 30px;
+              top: 19px;
+              margin: 0px;
+            }
+            &.show:after {
+              transform: rotate(316deg);
+            }
+          }
+          .dropdown-menu {
+            background-color: #221742;
+            position: static !important;
+            margin: 0px !important;
+            left: 0px !important;
+            transform: translate(0) !important;
+            width: 100% !important;
+            border-radius: 0px;
+            &:before {
+              display: none;
+            }
+            h3 {
+              display: none;
+            }
+            .submenulinks {
+              a {
+                padding-left: 0px;
+                padding-right: 0px;
+                font-weight: 400;
+                width: 100%;
+                color: #fff;
+                span {
+                  display: none;
+                }
+                .linkblockLeft {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      position: fixed;
+      right: 20px;
+      z-index: 9999;
+      border: none !important;
+      padding-right: 0px;
+      &:focus {
+        border: none !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .homeBanner img.bannerImg {
+    height: 100vh;
+  }
+  .homeBanner {
+    h1 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-top: 40px;
+      width: 100%;
+    }
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      width: 100%;
+    }
+  }
+
+  .valuedClient .clients {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .valuedClient .clients .item {
+    width: 50%;
+    margin: 15px 0;
+    text-align: center;
+  }
+  form.siteForm {
+    .form-group {
+      .iconInput {
+        img {
+          position: absolute;
+          left: 13px;
+          top: 12px;
+        }
+      }
+    }
+    .withIcon {
+      label {
+        width: 32%;
+      }
+      .iconInput {
+        width: 68%;
+      }
+    }
+  }
+  .enquiryNow {
+    font-family: Inter;
+    width: 100%;
+    border-radius: 0px;
+    padding: 24px 44px 0px 44px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 999;
+    background: #fff;
+
+    overflow: auto;
+    .invalid-feedback {
+      display: block;
+    }
+    .enquiryFor {
+      label {
+        padding-bottom: 6px;
+      }
+    }
+    .enquiryFor {
+      .radioInput {
+        flex-direction: row;
+        .form-check {
+          margin-bottom: 0px;
+        }
+        label {
+          height: 40px;
+        }
+      }
+    }
+    select{
+      height:46px;
+    }
+    button.close {
+      padding: 15px;
+      top: 0px;
+      left: auto;
+    }
+  
+  }
+  .enrollmentForm {
+    form.siteForm {
+      .fieldheader {
+        padding: 15px 0 15px 0;
+        margin: 0px;
+        h3 {
+          font-size: 18px;
+        }
+        span {
+          font-size: 14px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+  form.siteForm .form-group .form-select,
+  form.siteForm .form-floating .form-control,
+  form.siteForm .form-floating label {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  form.siteForm .form-group .label,
+  form.siteForm .form-group label {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .siteForm .radioInput .form-check {
+    padding: 15px 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    input {
+      margin-top: 0px;
+    }
+  }
+  form.siteForm .form-floating .form-control {
+    height: 53px;
+    min-height: 53px;
+    padding: 13px 13px 13px 13px;
+    line-height: 1.25;
+  }
+  form.siteForm .form-group .form-select {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  form.siteForm .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.7rem;
+  }
+
+  .impactClient {
+    padding-bottom: 30px;
+    .impactCont {
+      padding: 0px;
+    }
+    p {
+      text-align: center;
+    }
+
+    .impactIconRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .impact {
+      margin-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      justify-content: center;
+      h3 {
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: -2px;
+      }
+    }
+  }
+
+  .worldStreet {
+    .company {
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  .needHelp .h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  // Course List
+  .courseList {
+    .accordianData {
+    }
+  }
+  // FAQ
+  .faq {
+    .accordianData {
+      padding-top: 0px;
+    }
+  }
+  // Resources
+  .resources {
+    ul {
+      li {
+        padding: 10px;
+        align-items: center;
+      }
+    }
+  }
+  //Accordian
+  .accordianData {
+    button {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+    }
+    .item {
+      padding: 5px;
+      &.active {
+        .accordianBody {
+          font-size: 14px;
+          line-height: 18px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .trainingProgram {
+    .col-md-6 {
+      .item {
+        padding: 15px;
+        margin-bottom: 20px;
+        h3 {
+          font-size: 16px;
+          line-height: 25px;
+        }
+        .detail {
+          font-size: 14px;
+          svg {
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .ourServices {
+    p.headerPara {
+      line-height: 25px;
+      font-size: 18px;
+    }
+    .servicesRow {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-top: 15px;
+      .col-md-6 {
+        border-bottom: 1px solid #10184c !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+      }
+      .serviceItem {
+        padding: 25px;
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px;
+        }
+        p {
+          min-height: auto;
+          margin-bottom: 0px;
+          text-align: center;
+          line-height: 25px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .more {
+          padding-top: 0px;
+        }
+      }
+    }
+    .contentList .item {
+      padding: 10px 0;
+      h4,
+      p {
+        text-align: center;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  .servicesData {
+    .col-lg-4:last-child {
+      .serviceBlock {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .trainingData {
+    .col-md-4:last-child {
+      .item {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .pageContent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2 {
+      text-align: left;
+
+      padding-bottom: 15px;
+      &.extra {
+        text-align: left;
+
+        padding-bottom: 15px;
+      }
+    }
+    p {
+      padding: 15px 0;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .trainingProgram {
+    .item {
+      h3 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      margin: 1rem 0;
+    }
+    .col-md-4:last-child {
+      item {
+        margin-bottom: 0px;
+      }
+    }
+
+    .viewMore {
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  }
+  .siteFooter {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    .social {
+      justify-content: center;
+      padding: 20px 0 20px 0;
+    }
+
+    .copyright,
+    .privacy {
+      border-top: 1px solid #ffffff1a;
+      padding: 10px 0;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    nav {
+      padding: 0px 0;
+    }
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+  .headerPage {
+    height: auto;
+    .col {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-top: 115px;
+      padding-bottom: 15px;
+    }
+    &:before {
+      height: 292px;
+      display: none;
+    }
+    .pageTitle {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+  .enrollbox {
+    margin-top: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    position: static;
+  }
+  .enrollment {
+    .videoCol {
+      display: none;
+    }
+    form.siteForm {
+      margin-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      height: calc(100vh - 100px);
+
+      .withIcon {
+        label {
+          width: 48%;
+        }
+        .iconInput {
+          width: 52%;
+        }
+      }
+      .btnList {
+        button {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .siteFooter .emaillink {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .needHelp {
+    padding-bottom: 25px;
+    .viewMore {
+      margin-bottom: 25px;
+    }
+  }
+
+  /* Pagination */
+  .paginationBlock {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    .pagination {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  }
+  .courseInfo {
+    h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .price {
+      padding: 15px 0;
+      margin-bottom: 10px;
+      font-size: 25px;
+      line-height: 25px;
+    }
+    p {
+      padding: 20px 0;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+    }
+    .estimate {
+      div {
+        padding: 5px 0;
+        &:first-child {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  .enrollbox .largeBtn,
+  .enrollbox .largeBtnSecondary {
+    width: auto;
+    min-width: auto;
+    padding: 0 15px;
+    text-decoration: none;
+    position: relative;
+    height: 50px;
+    background: #6941c6;
+    gap: 10px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    font-size: 16px;
+  }
+  .enrollbox .largeBtn {
+    justify-content: center;
+  }
+  .enrollbox .largeBtnSecondary {
+    background-color: #f5f5f5;
+  }
+  .trainingSection {
+    padding: 0px;
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: normal;
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      flex-direction: column;
+      .tabblock {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        width: 100%;
+        border-bottom: var(--bs-border-width) var(--bs-border-style)
+          var(--bs-border-color) !important;
+        &:nth-child(2n),
+        &:nth-child(2n-1) {
+          margin: 0px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .skillsBlock {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,170 @@
+
+@media (min-width: 1024px) and (max-width:1368px) and (min-height:768px) and (max-height:1024px){
+    // body{
+   
+    // &:before{
+    // position:fixed;
+    // top:0px;
+    // left:0px;
+    // width:20px;
+    // height:20px;
+    // background-color: red;
+    // content:'';
+    // z-index:9999;
+ 
+    // }
+    // }
+    .navRow nav.navbar .navbar-nav .nav-link{padding:2px 10px;}
+    .noDesktop{
+      display: none;
+    }
+    .enquiryModal {
+      .modal-dialog {
+        margin:10px auto;
+      }
+    }
+    .enquiryNow{
+      top:5px;
+      .invalid-feedback{display:block}
+      form.siteForm{
+        div.form-floating{
+          padding-bottom:6px;
+          .form-control{
+          
+            height: 44px;
+        line-height: 44px;
+        min-height: 44px;
+          }
+        }
+        .captch{
+          padding-bottom:15px;
+        }
+      }
+    }
+    .pageContent{
+      padding:100px 0;
+    }
+    .noMobile{
+        display: block;
+    }
+    .section {
+     padding:100px 0;
+     
+   }
+   .valuedClient h2 {
+     padding-top:0px;
+   }
+   .valuedClient .clients{
+     padding-bottom: 0px;
+   }
+   .homeBanner h1 {
+     font-size: 45px;
+     line-height: 60px;
+   }
+   .homeBanner p{
+     font-size:22px;
+     line-height: 30px;
+   }
+   .homeBanner img.bannerImg {
+     height:100%;
+     width:auto;
+   }
+   .bigBtn{
+     position: relative;
+     padding: 12px 30px;
+     height: auto;
+     min-width: auto;
+     background: #6941c6;
+     gap: 10px;
+     border-radius: 50px;
+     border: none;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: all .3s;
+     text-decoration: none;
+     span.txt{
+       padding-left:0px;
+     }
+     span.icon{
+       padding-right:0px;
+     }
+   }
+   .sectionHeader, .faq .h2, .headerPage .pageTitle, .needHelp .h2, .worldStreet h2, .lookingTransfer h2, .boost h2, .trainingProgram h2, .impactClient h2{
+     font-size:40px;
+     line-height: 50px;
+     padding-bottom:30px
+   }
+   .ourServices .servicesRow{
+     margin-top:0px
+   }
+   .ourServices .serviceItem {padding:25px;}
+   .ourServices .serviceItem p{margin-bottom:0px;}
+   .ourServices .servicesRow .col-md-6:nth-child(3){    border-right: 1px solid #10184c;}
+   .ourServices .servicesRow .col-md-6:nth-child(4){    border-bottom: 1px solid #10184c;}
+   .impactClient{
+     padding :50px 0; 
+     .impactCont {
+       padding:0px
+     }
+   }
+   .trainingProgram .item h3{
+     font-size:22px;
+   }
+   .trainingProgram .item .detail{
+     font-size:18px;
+   }
+   .trainingProgram .item .detail svg{
+     width:18px;
+   }
+   .trainingProgram .viewMore{
+     margin:50px 0 0 0
+   }
+   .worldStreet .company p{
+     font-size:24px;
+     line-height: 40px;
+   }
+   .needHelp .h3{
+     font-size:30px;
+     line-height: 40px;
+   }
+   .siteFooter{
+    padding-top:0px;
+   }
+   .siteFooter {
+    .emaillink {
+      margin-top:100px;
+       font-size:25px;
+     }
+     .social{
+      justify-content: end;
+     }
+     .copyright{
+      justify-content: left;
+     }
+     .privacy {
+      justify-content: right;
+     }
+   }
+        /* Pagination */
+        .paginationBlock {
+          padding-top:20px;
+          padding-bottom:0px;
+          .pagination{
+            margin-top:0px;
+            padding-top:0px;
+          }
+         }
+         .enrollbox {
+          margin-top:-450px;
+          .video{
+            display: block;
+          }
+         }
+         .courseInfo{
+          .col-md-6{
+            width:50%;
+          }
+         }
+    }
+    
